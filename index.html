@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="dist/css/style.css" />
+  </head>
+  <body class="scroll-smooth bg-whiteOrange text-black">
+    <!-- Navbar -->
+    <section id="navbar">
+      <div class="container py-8">
+        <div class="w-full flex justify-between items-center">
+          <h1 class="text-lg font-bold">takata <span class="text-sm text-light-gray font-normal">by Ohaybi</span> </h1>
+          <a href="#" class="duration-300 ease-in-out relative bottom-0 hover:bottom-1">
+            <span class="py-2 px-4 text-base text-white bg-primary rounded-full">+ Submit</span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- End Navbar -->
+
+    <!-- Hero -->
+    <section id="hero-section">
+      <div class="container pt-16 pb-5">
+        <div class="w-full">
+          <h1 class="text-4xl md:text-6xl font-semibold text-center text-black">Koleksi Kata-Kata</h1>
+          <h3 class="text-lg md:text-2xl text-center text-gray">Temukan kata terbaik untuk produkmu.</h3>
+        </div>
+      </div>
+    </section>
+    <!-- End Hero -->
+
+    <!-- Search Bar -->
+    <section id="search-bar">
+      <form id="search-form" action="#" class="w-full flex justify-center items-center py-5">
+        <input type="text" name="search" id="search-input">
+        <a id="search-delete" class="cursor-pointer">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#7A7672" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <line x1="18" y1="6" x2="6" y2="18" />
+            <line x1="6" y1="6" x2="18" y2="18" />
+          </svg>
+        </a>
+        <button type="submit" id="search-submit" >
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+          <circle cx="10" cy="10" r="7" />
+          <line x1="21" y1="21" x2="15" y2="15" />
+          </svg>
+        </button>
+      </form>
+    </section>
+    <!-- End Search Bar -->
+
+    <!-- Category -->
+    <section id="category-list">
+      <div class="container py-5">
+        <div class="category-button-wrap w-full flex justify-center items-center flex-wrap gap-2 mx-auto"></div>
+      </div>
+    </section>
+    <!-- End Category -->
+
+    <!-- Card Collection -->
+    <section id="card-collection" class="container py-5">
+      <div class="card-container gap-4 flex flex-wrap justify-center items-center"></div>
+      </div>
+    </section>
+    <!-- End Card Collection -->
+
+    <!-- Copy Alert -->
+    <span id="copying-alert" class="text-sm fixed bottom-[-10%] left-1/2 -translate-x-1/2 z-50 px-5 py-3 text-white bg-black rounded-full"></span>
+    <!-- End Copy Alert -->
+
+    <script src="dist/js/script.js"></script>
+  </body>
+</html>

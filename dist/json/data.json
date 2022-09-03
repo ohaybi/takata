@@ -1,0 +1,42 @@
+[
+  {
+    "id": "0005",
+    "kata": "Hello my name is abdillah mufti, this is example for long text paragraph!",
+    "category": "form",
+    "author": "tokopedia",
+    "authorLink": "https://tokopedia.com",
+    "isLiked": "false"
+  },
+  {
+    "id": "0004",
+    "kata": "hello!",
+    "category": "button",
+    "author": "tokopedia",
+    "authorLink": "https://tokopedia.com",
+    "isLiked": "false"
+  },
+  {
+    "id": "0003",
+    "kata": "everyone!",
+    "category": "error",
+    "author": "tokopedia",
+    "authorLink": "https://tokopedia.com",
+    "isLiked": "false"
+  },
+  {
+    "id": "0002",
+    "kata": "good morning!",
+    "category": "success",
+    "author": "tokopedia",
+    "authorLink": "https://tokopedia.com",
+    "isLiked": "false"
+  },
+  {
+    "id": "0001",
+    "kata": "welcome back!",
+    "category": "header",
+    "author": "tokopedia",
+    "authorLink": "https://tokopedia.com",
+    "isLiked": "false"
+  }
+]
