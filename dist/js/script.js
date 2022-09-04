@@ -185,7 +185,7 @@ function popUpAlert() {
   popUp.innerText = `Kata disalin ${emoji[randomIndex]}`;
   popUp.classList.add("animation-pop");
 
-  setTimeout(function () {
+  setTimeout(() => {
     popUp.classList.remove("animation-pop");
   }, 2000);
 }
@@ -229,44 +229,70 @@ function copyToClipboard(copiedKata) {
   }
 }
 
+// Darkmode toggle
+const darkToggle = document.querySelector("#dark-toggle");
+const html = document.querySelector("html");
+const toggleIcon = document.querySelector(".toggle-icon");
+
+// Pindahkan toggle sesuai mode
+if (localStorage.theme === "dark" || (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+  darkToggle.checked = true;
+  toggleIcon.classList.add("sliding");
+} else {
+  darkToggle.checked = false;
+  toggleIcon.classList.remove("sliding");
+}
+
+darkToggle.addEventListener("click", function () {
+  if (darkToggle.checked) {
+    html.classList.add("dark");
+    localStorage.theme = "dark";
+    toggleIcon.classList.add("sliding");
+  } else {
+    html.classList.remove("dark");
+    localStorage.theme = "light";
+    toggleIcon.classList.remove("sliding");
+  }
+});
+
 let datas = [
   {
     id: "0005",
     kata: "Hello my name is abdillah mufti, this is example for long text paragraph!",
     category: "form",
-    author: "tokopedia",
+    author: "Ohaybi",
     authorLink: "https://tokopedia.com",
     isLiked: "false",
   },
   {
     id: "0004",
-    kata: "hello!",
+    kata: "Hello!",
     category: "button",
-    author: "tokopedia",
+    author: "Ohaybi",
     authorLink: "https://tokopedia.com",
     isLiked: "false",
   },
   {
     id: "0003",
-    kata: "everyone!",
+    kata: "Everyone!",
     category: "error",
-    author: "tokopedia",
+    author: "Ohaybi",
     authorLink: "https://tokopedia.com",
     isLiked: "false",
   },
   {
     id: "0002",
-    kata: "good morning!",
+    kata: "Good morning!",
     category: "success",
-    author: "tokopedia",
+    author: "Ohaybi",
     authorLink: "https://tokopedia.com",
     isLiked: "false",
   },
   {
     id: "0001",
-    kata: "welcome back!",
+    kata: "Welcome back!",
     category: "header",
-    author: "tokopedia",
+    author: "Ohaybi",
     authorLink: "https://tokopedia.com",
     isLiked: "false",
   },

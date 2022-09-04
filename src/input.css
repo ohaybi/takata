@@ -2,56 +2,60 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  font-family: "inter", "sans-serif";
+}
+
 .category-button {
-  @apply duration-300 ease-in-out py-1 px-2 text-white bg-gray rounded hover:bg-primary capitalize;
+  @apply relative rounded py-1 px-2 text-xs font-semibold capitalize text-hitam-50 duration-300 ease-in-out after:absolute after:top-0 after:left-0 after:-z-10 after:block after:h-full after:w-0 after:-skew-y-3 after:duration-300 hover:text-hitam-100 hover:after:w-[110%] hover:after:bg-primary  md:text-base;
 }
 
 .category-active {
-  @apply bg-primary;
+  @apply font-semibold text-hitam-100 after:w-full after:bg-primary;
 }
 
 #search-input {
-  @apply border-y border-l  placeholder:text-light-gray bg-transparent outline-none border-primary rounded-l-full py-4 px-8 w-1/2;
+  @apply order-1 w-1/2 border-y border-l border-hitam-100 bg-transparent py-2 px-4 text-hitam-100 outline-none placeholder:text-sm placeholder:text-hitam-50 dark:border-putih dark:text-putih md:py-4 md:px-8 md:placeholder:text-base;
 }
 
 #search-delete {
-  @apply border-y pr-2 py-4 border-primary;
+  @apply order-2 border-y border-hitam-100 stroke-hitam-50 px-2 py-2 dark:border-putih  md:py-4;
 }
 
 #search-submit {
-  @apply text-white border border-primary bg-primary rounded-r-full py-4 px-8;
+  @apply order-3 border border-hitam-100 bg-hitam-100 stroke-putih py-2 px-2 dark:border-putih dark:bg-putih dark:stroke-hitam-100 md:py-4 md:px-4;
 }
 
 .text-category {
-  @apply capitalize text-sm text-gray;
+  @apply text-xs capitalize text-hitam-50 md:text-sm;
 }
 
 .text-kata {
-  @apply font-bold text-center text-2xl relative -top-2;
+  @apply relative -top-2 text-center text-base font-bold md:text-2xl;
 }
 
 .author-link {
-  @apply text-sm text-gray italic;
+  @apply text-xs italic text-hitam-50 md:text-sm;
 }
 
 .button-copy {
-  @apply text-xl  hover:rotate-12 duration-200 stroke-gray hover:stroke-primary;
+  @apply stroke-hitam-50  text-base text-hitam-50 duration-200 hover:rotate-12 hover:stroke-primary;
 }
 
 .top-card {
-  @apply w-full flex justify-between items-center;
+  @apply flex w-full items-center justify-between;
 }
 
 .bottom-card {
-  @apply w-full flex justify-center items-center;
+  @apply flex w-full items-center justify-center;
 }
 
 .card-content {
-  @apply flex flex-col justify-between h-full p-6;
+  @apply flex h-full flex-col justify-between p-6;
 }
 
 .card-item {
-  @apply rounded-xl w-full md:w-[47%] lg:w-[30%] bg-white h-[300px] p-2 box-border duration-300 drop-shadow-md hover:drop-shadow-2xl;
+  @apply relative box-border h-[300px] w-full rounded bg-white p-2 drop-shadow-md duration-300 hover:z-10 hover:drop-shadow-2xl dark:bg-hitam-80 md:w-[47%] lg:w-[30%];
 }
 
 .hide {
@@ -60,4 +64,8 @@
 
 .animation-pop {
   @apply animate-pop;
+}
+
+.sliding {
+  @apply -top-1/2;
 }
